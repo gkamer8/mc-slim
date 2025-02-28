@@ -10,7 +10,7 @@ docker build -t my_openmc_custom .
 Now run it with the appropriate volume mount so you can easily edit the source code:
 
 ```
-docker run -it --name=my_openmc_custom -v $(pwd)/src:/root/src my_openmc_custom
+docker run -it --name=my_openmc_custom -v ./src:/root/src my_openmc_custom
 ```
 
 If you exit, you can reenter with:
